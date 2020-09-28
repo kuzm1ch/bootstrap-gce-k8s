@@ -13,15 +13,14 @@ terraform plan # will ask you to provide project_id
 terraform apply
 ```
 In the end it will bootstrap kubernetes cluster with argocd installed.
-Argocd will be configured to look on argocd/argocd-apps meta application. 
+Argocd is configured to look on argocd/argocd-apps meta application.  
 If you need to add additional argocd applications change argocd/argocd-apps and it will be synced. No need to rerun terraform.
 
 
 ## TODO
 * Seperate argocd applications templates and argocd meta application template
 * Bootstrap terraform remote storage
-* Resolve issue with google_project_service to ensure that compute.googleapis.
-* Move hardcoded values to variables(ip_ranges, network_name etc).For now it is in most cases hardcoded to keep it simple. 
+* Move hardcoded values to variables(ip_ranges, network_name etc).For now it is in most cases hardcoded to keep it simple.
 
 ## NOTES
 In case of error like this, do needful(enable service as described). Btw, it can be related to project quota(Free Tier).
