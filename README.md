@@ -31,3 +31,14 @@ Error: googleapi: Error 403: Compute Engine API has not been used in project 104
   on .terraform/modules/gke/main.tf line 22, in data "google_compute_zones" "available":
   22: data "google_compute_zones" "available" {
 ```
+
+## Output
+```
+kubectl port-forward svc/argo-cd-argocd-server -n argocd 8089:80
+```
+http://localhost:8089
+```
+login: admin
+password: argocd-server-pod-name
+```
+![Argocd UI](docs/images/argocd.png)
