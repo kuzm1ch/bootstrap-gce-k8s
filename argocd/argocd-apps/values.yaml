@@ -1,0 +1,6 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/kuzm1ch/bootstrap-gce-k8s
+    targetRevision: HEAD
